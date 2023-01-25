@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <!-- <link rel="stylesheet" href="style.css">   -->
+</head><!--  -->
+
+<body>
+  <section class="seccion_formulario-ingreso">
+    <form id="formulario" class="formulario"  action="">
+      <label for="cardNumber">Ingrese numero de su tarjeta.</label> <br><br> <!--el for me pide que coloque el id del input  -->
+      <input id="cardNnumber" class="formulario_ingreso" type="text" name="cardnumber" maxlength="19" placeholder="0000 0000 0000 0000" ></input>
+      
+      <div class="formulario_cardnumber--error errorColor">
+        <p id="mensajeError" ></p>
+      </div><br>
+
+
+
+      <button id="boton">Validar Tarjeta4333</button>
+
+      <div id="result"></div>
+      <script lang="javascript">
+        function validate() {
+          const valid = isValid(document.getElementById("cardnumber").value)
+          if (valid) {
+            // Show success in div#result
+          }
+          else {
+            // Show error message in div#result
+          }
+        }
+    
+        function isValid(creditCardNumber){
+          // is creditCardNumber valid?
+          return false
+        }
+      </script>
+    </form>
+    
+
+
+  </section>
+  <script src="./ejecutar.js"></script>
+</body>
+
+</html>
